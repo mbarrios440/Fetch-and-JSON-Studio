@@ -23,13 +23,12 @@ window.addEventListener("load", () => {
                     </div>
                     <img class="avatar" src="${astronauts[i].picture}">
                 </div>    
-        `;
-        let active = document.getElementById(`active${i}`); 
-        if (astronauts[i].active == true){
-            active.style.color = 'green';
-        }
-
+            `;
+            let active = document.getElementById(`active${i}`); 
+            if (astronauts[i].active == true){
+                active.style.color = 'green';
+            }
         }
     }
 
-    });
+});

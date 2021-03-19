@@ -1,7 +1,5 @@
 window.addEventListener("load", () => {
-
     let astronauts; 
-
     fetch('https://handlers.education.launchcode.org/static/astronauts.json')
     .then(response => response.json())
     .then(data => astronauts = data)
@@ -26,19 +24,12 @@ window.addEventListener("load", () => {
                     </div>
                     <img class="avatar" src="${astronauts[i].picture}">
                 </div>    
-        `;
-        let active = document.getElementById(`active${i}`); 
-        if (astronauts[i].active == true){
-            active.style.color = 'green';
-        }
+            `;
+            let active = document.getElementById(`active${i}`); 
+            if (astronauts[i].active == true){
+                active.style.color = 'green';
+            }
 
         }
     });
-    
-
-
-    
-
-
-
 });
